@@ -1,0 +1,12 @@
+{
+  "name": "tokenusage",
+  "description": "Plugins from tokenusage.dev",
+  "owner": { "name": "tokenusage.dev", "url": "https://tokenusage.dev/" },
+  "plugins": [
+    {
+      "name": "tokenusage-codex",
+      "source": "./",
+      "description": "Codex reset tracker: usage-limit reset announcements from @thsottiaux on X. Read-only, no key."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tokenusage": {
+      "type": "http",
+      "url": "https://tokenusage.dev/mcp"
+    }
+  }
+}

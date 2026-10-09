@@ -1,0 +1,10 @@
+{
+  "name": "tokenusage-codex",
+  "version": "1.0.0",
+  "description": "Codex reset tracker: usage-limit reset announcements from @thsottiaux on X. Read-only, no key.",
+  "mcpServers": {
+    "tokenusage": {
+      "httpUrl": "https://tokenusage.dev/mcp"
+    }
+  }
+}

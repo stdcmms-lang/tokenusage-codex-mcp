@@ -1,0 +1,11 @@
+{
+  "name": "tokenusage-codex",
+  "version": "1.0.0",
+  "description": "Codex reset tracker: usage-limit reset announcements from @thsottiaux on X, from tokenusage.dev. Read-only, no key.",
+  "author": { "name": "tokenusage.dev", "url": "https://tokenusage.dev/" },
+  "homepage": "https://tokenusage.dev/developers",
+  "repository": "https://github.com/jack-beanstalk-2022/tokenusage-codex-mcp",
+  "license": "MIT",
+  "keywords": ["codex", "openai-codex", "usage-limits", "reset", "mcp"],
+  "mcpServers": "./.mcp.json"
+}

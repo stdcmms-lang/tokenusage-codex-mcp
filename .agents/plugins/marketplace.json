@@ -1,0 +1,6 @@
+{
+  "name": "tokenusage",
+  "plugins": [
+    { "name": "tokenusage-codex", "source": { "source": "local", "path": "./" } }
+  ]
+}
