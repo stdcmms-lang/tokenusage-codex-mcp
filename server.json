@@ -3,8 +3,9 @@
   "name": "dev.tokenusage/codex",
   "title": "Codex Reset Tracker",
   "description": "Codex reset tracker: usage-limit reset announcements from @thsottiaux on X. Read-only, no key.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "websiteUrl": "https://tokenusage.dev/resets",
+  "repository": { "url": "https://github.com/stdcmms-lang/tokenusage-codex-mcp", "source": "github" },
   "icons": [{ "src": "https://tokenusage.dev/icon-192.png", "mimeType": "image/png", "sizes": ["192x192"] }],
   "remotes": [
     {

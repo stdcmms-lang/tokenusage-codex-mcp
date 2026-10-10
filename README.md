@@ -19,9 +19,11 @@ fields, caching and limits are documented at
 
 | Tool | What it returns |
 |---|---|
-| `get_codex_reset_announcements` | Codex usage-limit reset announcements by @thsottiaux on X, newest first (`limit` 1 to 50, default 10): each post's link, when it was posted and when tokenusage.dev recorded it, plus when the monitor last checked X. |
+| `get_codex_reset_announcements` | Codex usage-limit reset announcements by @thsottiaux on X, newest first (`limit` 1 to 50, default 10): each post's link, when it was posted, when tokenusage.dev recorded it and its `resetType` (`automatic`, `banked` or `both`; `null` for records older than reset types), plus when the monitor last checked X. |
+| `get_codex_reset_calendar` | The same announcements grouped by UTC calendar date, newest first, at most 50 in total; an optional `month` (`YYYY-MM`) selects one UTC month. A date without an entry does not mean no reset was announced. |
 
-A post is not proof that your own limit was reset: open its link for the exact wording, and
+A banked reset grant saves a reset for eligible users to apply later and does not itself refill
+limits. A post is not proof that your own limit was reset: open its link for the exact wording, and
 check your Codex account for your personal reset times. Only @thsottiaux is watched.
 
 ## Install
@@ -35,7 +37,7 @@ claude mcp add --transport http tokenusage https://tokenusage.dev/mcp
 or as a plugin:
 
 ```sh
-claude plugin marketplace add jack-beanstalk-2022/tokenusage-codex-mcp
+claude plugin marketplace add stdcmms-lang/tokenusage-codex-mcp
 claude plugin install tokenusage-codex@tokenusage
 ```
 
@@ -48,14 +50,14 @@ codex mcp add tokenusage --url https://tokenusage.dev/mcp
 or as a plugin:
 
 ```sh
-codex plugin marketplace add jack-beanstalk-2022/tokenusage-codex-mcp
+codex plugin marketplace add stdcmms-lang/tokenusage-codex-mcp
 codex plugin add tokenusage-codex@tokenusage
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini extensions install https://github.com/jack-beanstalk-2022/tokenusage-codex-mcp
+gemini extensions install https://github.com/stdcmms-lang/tokenusage-codex-mcp
 ```
 
 **Cursor** (`.cursor/mcp.json`) and other clients that take an `mcpServers` file:
