@@ -78,7 +78,7 @@ A client that supports only stdio servers can bridge with
 ## Credit
 
 The data is free to reuse on one condition: where you show it to other people, in a site,
-app, bot message or dashboard, show [Data: tokenusage.dev](https://tokenusage.dev/resets) on
+app, bot message or dashboard, show `Data: tokenusage.dev` linked to https://tokenusage.dev/resets on
 the same screen or in the same message. Personal use needs no visible credit. Every response
 carries the link in its `source` field. See the [terms](https://tokenusage.dev/terms).
 
