@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.tokenusage/nerfwatch",
+  "title": "Nerf Watch",
+  "description": "Daily Nerf Watch scores for Claude and GPT models on one private, code-graded suite. Read-only.",
+  "version": "1.0.0",
+  "websiteUrl": "https://tokenusage.dev/nerfwatch",
+  "repository": {
+    "url": "https://github.com/stdcmms-lang/tokenusage-codex-mcp",
+    "source": "github",
+    "subfolder": "nerfwatch"
+  },
+  "icons": [
+    {
+      "src": "https://tokenusage.dev/icon-192.png",
+      "mimeType": "image/png",
+      "sizes": ["192x192"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tokenusage.dev/mcp/nerfwatch"
+    }
+  ]
+}
