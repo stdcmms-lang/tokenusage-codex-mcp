@@ -15,6 +15,11 @@ This repository holds client configuration only. The server is hosted at tokenus
 fields, caching and limits are documented at
 [tokenusage.dev/developers](https://tokenusage.dev/developers).
 
+Nerf Watch has a separate read-only MCP server for public benchmark scores and history.
+See [Nerf Watch installation and tools](nerfwatch/README.md).
+A lower score is a lower score on this suite, not proof that a provider changed a model.
+`Data: tokenusage.dev` linked to https://tokenusage.dev/nerfwatch.
+
 ## Tools
 
 | Tool | What it returns |
